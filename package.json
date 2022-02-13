@@ -1,0 +1,20 @@
+{
+  "name": "lh-tailwind-minimal-boilerplate",
+  "version": "1.0.0",
+  "description": "Just Give me a like",
+  "keywords": "Tailwind Boilerplate",
+  "license": "Free to Use",
+  "author": "Prakash Nayak",
+  "scripts": {
+    "watch":"npx tailwindcss -o ./dist/output.css --watch",
+    "minify":"npx tailwindcss -o ./dist/output.minify.css --minify",
+    "build": "parcel build index.html",
+    "dev": "parcel index.html --open",
+    "start": "npm run build && npm run dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "tailwindcss": "^3.0.22"
+  }
+}
